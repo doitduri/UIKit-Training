@@ -130,6 +130,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rl4-gj-xdd">
                                 <rect key="frame" x="192" y="403.5" width="30" height="30"/>
                                 <state key="normal" title="저장"/>
+                                <connections>
+                                    <action selector="tabSaveButton:" destination="Kno-X7-hZl" eventType="touchUpInside" id="Ktp-nV-dYH"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="VzH-gE-QYJ">
                                 <rect key="frame" x="24" y="312" width="366" height="67.5"/>
