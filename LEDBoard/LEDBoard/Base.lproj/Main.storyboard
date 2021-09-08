@@ -27,7 +27,7 @@
         <!--View Controller-->
         <scene sceneID="YSA-hM-oQv">
             <objects>
-                <viewController id="0bQ-nM-1uX" sceneMemberID="viewController">
+                <viewController id="0bQ-nM-1uX" customClass="ViewController" customModule="LEDBoard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Kg1-FX-ud5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -49,19 +49,22 @@
                     <navigationItem key="navigationItem" id="nkQ-Ti-s2h">
                         <barButtonItem key="rightBarButtonItem" title="설정" id="axv-24-t0X">
                             <connections>
-                                <segue destination="Kno-X7-hZl" kind="show" id="8Xh-Vp-l4b"/>
+                                <segue destination="Kno-X7-hZl" kind="show" id="eFV-m0-D66"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="contentLabel" destination="IWl-PZ-PfN" id="waP-eS-WTZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EDt-n1-TGE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="316" y="295"/>
         </scene>
-        <!--설정-->
+        <!--ViewController-->
         <scene sceneID="3hD-MB-4d9">
             <objects>
-                <viewController id="Kno-X7-hZl" sceneMemberID="viewController">
+                <viewController title="ViewController" id="Kno-X7-hZl" customClass="SettingViewController" customModule="LEDBoard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4vi-PV-hRU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -102,14 +105,23 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V1e-dd-jhD">
                                                 <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
                                                 <state key="normal" image="yellow_circle"/>
+                                                <connections>
+                                                    <action selector="tabTextColorButton:" destination="Kno-X7-hZl" eventType="touchUpInside" id="zKE-kI-MO2"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" alpha="0.20000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XxJ-vx-ZK8">
+                                            <button opaque="NO" alpha="0.20000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XxJ-vx-ZK8" userLabel="Purple Button">
                                                 <rect key="frame" x="65" y="0.0" width="32" height="32"/>
                                                 <state key="normal" image="purple_circle"/>
+                                                <connections>
+                                                    <action selector="tabTextColorButton:" destination="Kno-X7-hZl" eventType="touchUpInside" id="3tU-VW-dxA"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" alpha="0.20000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LjB-4m-vdu">
                                                 <rect key="frame" x="130" y="0.0" width="32" height="32"/>
                                                 <state key="normal" image="green_circle"/>
+                                                <connections>
+                                                    <action selector="tabTextColorButton:" destination="Kno-X7-hZl" eventType="touchUpInside" id="gDK-F4-qAc"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -118,6 +130,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rl4-gj-xdd">
                                 <rect key="frame" x="192" y="403.5" width="30" height="30"/>
                                 <state key="normal" title="저장"/>
+                                <connections>
+                                    <action selector="tabSaveButton:" destination="Kno-X7-hZl" eventType="touchUpInside" id="Ktp-nV-dYH"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="VzH-gE-QYJ">
                                 <rect key="frame" x="24" y="312" width="366" height="67.5"/>
@@ -134,14 +149,23 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2jq-xb-R2R">
                                                 <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
                                                 <state key="normal" image="black_circle"/>
+                                                <connections>
+                                                    <action selector="tabBackgroundColorButton:" destination="Kno-X7-hZl" eventType="touchUpInside" id="ICk-31-lcv"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7jD-4j-URK">
+                                            <button opaque="NO" alpha="0.20000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7jD-4j-URK">
                                                 <rect key="frame" x="65" y="0.0" width="32" height="32"/>
                                                 <state key="normal" image="blue_circle"/>
+                                                <connections>
+                                                    <action selector="tabBackgroundColorButton:" destination="Kno-X7-hZl" eventType="touchUpInside" id="DiJ-Yc-cwM"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" alpha="0.20000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3uT-WI-xAT">
                                                 <rect key="frame" x="130" y="0.0" width="32" height="32"/>
                                                 <state key="normal" image="orange_circle"/>
+                                                <connections>
+                                                    <action selector="tabBackgroundColorButton:" destination="Kno-X7-hZl" eventType="touchUpInside" id="9pO-Q2-XpU"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -165,10 +189,19 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="설정" id="8ZX-N4-lMD"/>
+                    <connections>
+                        <outlet property="blackButton" destination="2jq-xb-R2R" id="6lB-mh-1SS"/>
+                        <outlet property="blueButton" destination="7jD-4j-URK" id="uQP-gS-ucI"/>
+                        <outlet property="greenButton" destination="LjB-4m-vdu" id="cnv-Yu-Nax"/>
+                        <outlet property="orangeButton" destination="3uT-WI-xAT" id="dsj-Y3-rEm"/>
+                        <outlet property="purpleButton" destination="XxJ-vx-ZK8" id="e58-t1-lWY"/>
+                        <outlet property="textField" destination="MOG-0F-UIS" id="t5H-9g-cbJ"/>
+                        <outlet property="yellowButton" destination="V1e-dd-jhD" id="x8X-WW-joB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K4A-nX-dhn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1107" y="295"/>
+            <point key="canvasLocation" x="1109" y="295"/>
         </scene>
     </scenes>
     <resources>
