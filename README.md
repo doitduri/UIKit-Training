@@ -10,18 +10,16 @@
 
 ---
 
-### 1. QuoteGenerator : 간단한 명언 제조기
-- UIKit
-- UIView, UIViewController
-- AutoLayout
-- IBOutlet & IBAction 
+|No.|폴더(또는 프로젝트) 명 | 프로젝트 설명 및 공부한 내용|비고|
+|------|---|---|---|
+|1|QuoteGenerator|간단한 명언 제조기|[링크](https://github.com/doitduri/UIKit-Training/tree/main/QuoteGenerator) |
+|2|ScreenTransactionExample|화면 전환 예제 |[링크](https://github.com/doitduri/UIKit-Training/tree/main/ScreenTransactionExample) |
+|3|LEDBoard|간단한 전광판 앱|[링크](https://github.com/doitduri/UIKit-Training/tree/main/LEDBoard) |
+|4|Calculator|계산기 앱|[링크](https://github.com/doitduri/UIKit-Training/tree/main/Calculator)|
+|5|Login |Firebase 기반 Login (Spotify UI)| |
+|6|실시간 공지 팝업 |Firebase remote config로 팝업 제어 | |
+|7|물 마시기 앱 |local notification | |
+|8|재난문자 푸시 알림 앱 |APNs, FCM | |
+|9|영화 추천 앱 |SnapKit | |
+|10|브루어리 추천 앱 |API 통신, URLSesstion| |
 
-
-### 2. ScreenTransactionExample : 화면 전환 예제 
-- Contrainer View Controller
-- Navigation View Controller, 화면전환 방법 (4가지)
-- ViewController Life-cycle
-
-
-### 3. LEDBoard : 간단한 전광판 앱
-- 
