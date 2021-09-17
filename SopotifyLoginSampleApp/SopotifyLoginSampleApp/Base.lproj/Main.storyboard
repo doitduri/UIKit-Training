@@ -141,7 +141,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="hDI-Do-Q3N">
-                                <rect key="frame" x="30" y="158" width="354" height="260"/>
+                                <rect key="frame" x="30" y="158" width="354" height="330"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이메일 주소가 무엇인가요?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="igh-Dn-Maa">
                                         <rect key="frame" x="0.0" y="0.0" width="354" height="50"/>
@@ -174,19 +174,16 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eZD-pV-GR0">
+                                        <rect key="frame" x="0.0" y="280" width="354" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" systemColor="systemRedColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="azt-Bc-cgM">
-                                <rect key="frame" x="128" y="419" width="203" height="0.0"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="203" id="FFV-pI-Ni6"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" systemColor="systemRedColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qss-co-wxn">
-                                <rect key="frame" x="157" y="478" width="100" height="60"/>
+                                <rect key="frame" x="157" y="548" width="100" height="60"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="Gtg-Xm-Hgn"/>
@@ -204,12 +201,9 @@
                         <viewLayoutGuide key="safeArea" id="Rx3-5h-Gvv"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="azt-Bc-cgM" secondAttribute="trailing" constant="63" id="HLM-fT-W21"/>
                             <constraint firstItem="Rx3-5h-Gvv" firstAttribute="trailing" secondItem="hDI-Do-Q3N" secondAttribute="trailing" constant="30" id="Xql-YD-m8D"/>
-                            <constraint firstItem="azt-Bc-cgM" firstAttribute="top" secondItem="hDI-Do-Q3N" secondAttribute="bottom" constant="1" id="eUp-Eb-AgV"/>
                             <constraint firstItem="hDI-Do-Q3N" firstAttribute="centerX" secondItem="Rx3-5h-Gvv" secondAttribute="centerX" id="lcj-MK-FgW"/>
                             <constraint firstItem="hDI-Do-Q3N" firstAttribute="leading" secondItem="Rx3-5h-Gvv" secondAttribute="leading" constant="30" id="lma-Ey-ImJ"/>
-                            <constraint firstItem="azt-Bc-cgM" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="x2i-v8-Fuq" secondAttribute="leading" constant="20" symbolic="YES" id="lqe-FL-nLn"/>
                             <constraint firstItem="hDI-Do-Q3N" firstAttribute="top" secondItem="Rx3-5h-Gvv" secondAttribute="top" constant="70" id="mHU-uv-A0w"/>
                             <constraint firstItem="Qss-co-wxn" firstAttribute="centerX" secondItem="Rx3-5h-Gvv" secondAttribute="centerX" id="wPx-XO-DI3"/>
                             <constraint firstItem="Qss-co-wxn" firstAttribute="top" secondItem="hDI-Do-Q3N" secondAttribute="bottom" constant="60" id="znQ-LK-ulu"/>
@@ -218,7 +212,7 @@
                     <navigationItem key="navigationItem" title="이메일/비밀번호로 입력하기" id="YQU-in-dKB"/>
                     <connections>
                         <outlet property="emailTextField" destination="ai2-Xd-hxW" id="Ose-aa-jVC"/>
-                        <outlet property="errorMessageLabel" destination="x2i-v8-Fuq" id="VLR-ia-vRd"/>
+                        <outlet property="errorMessageLabel" destination="eZD-pV-GR0" id="qR4-WK-y0w"/>
                         <outlet property="nextButton" destination="Qss-co-wxn" id="PzK-g3-MBI"/>
                         <outlet property="passwordTextField" destination="I4J-YL-8x4" id="UnU-5O-vJu"/>
                     </connections>
