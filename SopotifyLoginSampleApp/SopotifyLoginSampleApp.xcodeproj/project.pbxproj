@@ -13,6 +13,8 @@
 		C13C856826F4A9A600E07809 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C13C856726F4A9A600E07809 /* Assets.xcassets */; };
 		C13C856B26F4A9A600E07809 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C13C856926F4A9A600E07809 /* LaunchScreen.storyboard */; };
 		C13C857326F4A9D100E07809 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13C857226F4A9D100E07809 /* LoginViewController.swift */; };
+		C1F453BF26F4B03800AD80F2 /* EnterEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F453BE26F4B03800AD80F2 /* EnterEmailViewController.swift */; };
+		C1F453C126F4B65A00AD80F2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F453C026F4B65A00AD80F2 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		C13C856A26F4A9A600E07809 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C13C856C26F4A9A600E07809 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C13C857226F4A9D100E07809 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C1F453BE26F4B03800AD80F2 /* EnterEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterEmailViewController.swift; sourceTree = "<group>"; };
+		C1F453C026F4B65A00AD80F2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +60,12 @@
 		C13C855D26F4A9A300E07809 /* SopotifyLoginSampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				C1F453C026F4B65A00AD80F2 /* MainViewController.swift */,
 				C13C855E26F4A9A300E07809 /* AppDelegate.swift */,
 				C13C856026F4A9A300E07809 /* SceneDelegate.swift */,
 				C13C856426F4A9A300E07809 /* Main.storyboard */,
 				C13C857226F4A9D100E07809 /* LoginViewController.swift */,
+				C1F453BE26F4B03800AD80F2 /* EnterEmailViewController.swift */,
 				C13C856726F4A9A600E07809 /* Assets.xcassets */,
 				C13C856926F4A9A600E07809 /* LaunchScreen.storyboard */,
 				C13C856C26F4A9A600E07809 /* Info.plist */,
@@ -139,7 +145,9 @@
 			files = (
 				C13C857326F4A9D100E07809 /* LoginViewController.swift in Sources */,
 				C13C855F26F4A9A300E07809 /* AppDelegate.swift in Sources */,
+				C1F453BF26F4B03800AD80F2 /* EnterEmailViewController.swift in Sources */,
 				C13C856126F4A9A300E07809 /* SceneDelegate.swift in Sources */,
+				C1F453C126F4B65A00AD80F2 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
