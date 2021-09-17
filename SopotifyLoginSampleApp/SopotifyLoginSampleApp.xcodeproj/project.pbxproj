@@ -15,9 +15,13 @@
 		C13C857326F4A9D100E07809 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13C857226F4A9D100E07809 /* LoginViewController.swift */; };
 		C1F453BF26F4B03800AD80F2 /* EnterEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F453BE26F4B03800AD80F2 /* EnterEmailViewController.swift */; };
 		C1F453C126F4B65A00AD80F2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F453C026F4B65A00AD80F2 /* MainViewController.swift */; };
+		C1F453C326F4C84000AD80F2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C1F453C226F4C84000AD80F2 /* GoogleService-Info.plist */; };
+		C45F70A7B34B9CE903FD6A8F /* Pods_SopotifyLoginSampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185FA9CF44D292A825C11828 /* Pods_SopotifyLoginSampleApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		185FA9CF44D292A825C11828 /* Pods_SopotifyLoginSampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SopotifyLoginSampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		226CEB7A288601E9E7D99B26 /* Pods-SopotifyLoginSampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SopotifyLoginSampleApp.debug.xcconfig"; path = "Target Support Files/Pods-SopotifyLoginSampleApp/Pods-SopotifyLoginSampleApp.debug.xcconfig"; sourceTree = "<group>"; };
 		C13C855B26F4A9A300E07809 /* SopotifyLoginSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SopotifyLoginSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C13C855E26F4A9A300E07809 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C13C856026F4A9A300E07809 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +32,8 @@
 		C13C857226F4A9D100E07809 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C1F453BE26F4B03800AD80F2 /* EnterEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterEmailViewController.swift; sourceTree = "<group>"; };
 		C1F453C026F4B65A00AD80F2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		C1F453C226F4C84000AD80F2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CDA187C3E561B81ED3C4118F /* Pods-SopotifyLoginSampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SopotifyLoginSampleApp.release.xcconfig"; path = "Target Support Files/Pods-SopotifyLoginSampleApp/Pods-SopotifyLoginSampleApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +41,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C45F70A7B34B9CE903FD6A8F /* Pods_SopotifyLoginSampleApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11916AEAA3D1062A15A7A664 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				226CEB7A288601E9E7D99B26 /* Pods-SopotifyLoginSampleApp.debug.xcconfig */,
+				CDA187C3E561B81ED3C4118F /* Pods-SopotifyLoginSampleApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C13C855226F4A9A200E07809 = {
 			isa = PBXGroup;
 			children = (
 				C13C855D26F4A9A300E07809 /* SopotifyLoginSampleApp */,
 				C13C855C26F4A9A300E07809 /* Products */,
+				11916AEAA3D1062A15A7A664 /* Pods */,
+				C767F24E3F82784AA1C6CFBD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,8 +88,17 @@
 				C13C856726F4A9A600E07809 /* Assets.xcassets */,
 				C13C856926F4A9A600E07809 /* LaunchScreen.storyboard */,
 				C13C856C26F4A9A600E07809 /* Info.plist */,
+				C1F453C226F4C84000AD80F2 /* GoogleService-Info.plist */,
 			);
 			path = SopotifyLoginSampleApp;
+			sourceTree = "<group>";
+		};
+		C767F24E3F82784AA1C6CFBD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				185FA9CF44D292A825C11828 /* Pods_SopotifyLoginSampleApp.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -80,9 +108,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C13C856F26F4A9A600E07809 /* Build configuration list for PBXNativeTarget "SopotifyLoginSampleApp" */;
 			buildPhases = (
+				D4E0575A727600882EE33BD8 /* [CP] Check Pods Manifest.lock */,
 				C13C855726F4A9A200E07809 /* Sources */,
 				C13C855826F4A9A200E07809 /* Frameworks */,
 				C13C855926F4A9A200E07809 /* Resources */,
+				C42C318974C8BD869C890EB3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,12 +161,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				C13C856B26F4A9A600E07809 /* LaunchScreen.storyboard in Resources */,
+				C1F453C326F4C84000AD80F2 /* GoogleService-Info.plist in Resources */,
 				C13C856826F4A9A600E07809 /* Assets.xcassets in Resources */,
 				C13C856626F4A9A300E07809 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C42C318974C8BD869C890EB3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SopotifyLoginSampleApp/Pods-SopotifyLoginSampleApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SopotifyLoginSampleApp/Pods-SopotifyLoginSampleApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SopotifyLoginSampleApp/Pods-SopotifyLoginSampleApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4E0575A727600882EE33BD8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SopotifyLoginSampleApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C13C855726F4A9A200E07809 /* Sources */ = {
@@ -291,6 +364,7 @@
 		};
 		C13C857026F4A9A600E07809 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 226CEB7A288601E9E7D99B26 /* Pods-SopotifyLoginSampleApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +384,7 @@
 		};
 		C13C857126F4A9A600E07809 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDA187C3E561B81ED3C4118F /* Pods-SopotifyLoginSampleApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
