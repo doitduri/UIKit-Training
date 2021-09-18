@@ -67,22 +67,10 @@
                                             <segue destination="aLM-8f-ZdV" kind="show" id="Fdf-NA-PCl"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9QZ-he-giX">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fWG-PU-8HD" customClass="GIDSignInButton">
                                         <rect key="frame" x="0.0" y="75" width="354" height="60"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="60" id="T56-rO-vX9"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                        <inset key="titleEdgeInsets" minX="-30" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                        <inset key="imageEdgeInsets" minX="-120" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                        <state key="normal" title="구글로 계속하기" image="logo_google">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="googleLoginButton:" destination="DSI-OO-5Dd" eventType="touchUpInside" id="u0D-GT-0BN"/>
-                                            <action selector="tapGoogleLoginButton:" destination="DSI-OO-5Dd" eventType="touchUpInside" id="tuI-dZ-9CF"/>
-                                        </connections>
-                                    </button>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ndd-Id-Ab3">
                                         <rect key="frame" x="0.0" y="150" width="354" height="60"/>
                                         <constraints>
@@ -102,10 +90,10 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="Ndd-Id-Ab3" secondAttribute="trailing" id="DAC-Xl-yWh"/>
-                                    <constraint firstAttribute="trailing" secondItem="9QZ-he-giX" secondAttribute="trailing" id="OjP-s0-09N"/>
+                                    <constraint firstAttribute="trailing" secondItem="fWG-PU-8HD" secondAttribute="trailing" id="Ddh-v0-fsg"/>
                                     <constraint firstItem="Mam-KS-N4y" firstAttribute="leading" secondItem="l9b-In-fjL" secondAttribute="leading" id="P4j-hy-sxf"/>
                                     <constraint firstAttribute="trailing" secondItem="Mam-KS-N4y" secondAttribute="trailing" id="PWv-5q-oqN"/>
-                                    <constraint firstItem="9QZ-he-giX" firstAttribute="leading" secondItem="l9b-In-fjL" secondAttribute="leading" id="pQD-aX-oAH"/>
+                                    <constraint firstItem="fWG-PU-8HD" firstAttribute="leading" secondItem="l9b-In-fjL" secondAttribute="leading" id="VbN-jR-3pW"/>
                                     <constraint firstItem="Ndd-Id-Ab3" firstAttribute="leading" secondItem="l9b-In-fjL" secondAttribute="leading" id="uVX-ZH-TYz"/>
                                 </constraints>
                             </stackView>
@@ -125,7 +113,7 @@
                     <connections>
                         <outlet property="appleLoginButton" destination="Ndd-Id-Ab3" id="4Gd-rQ-q1W"/>
                         <outlet property="emailLoginButton" destination="Mam-KS-N4y" id="fhp-gK-6v8"/>
-                        <outlet property="googleLoginButton" destination="9QZ-he-giX" id="Jlv-va-KJ2"/>
+                        <outlet property="googleLoginButton" destination="fWG-PU-8HD" id="HpE-Qv-CM2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DEy-s8-VAE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -267,7 +255,6 @@
     </scenes>
     <resources>
         <image name="logo_apple" width="33.333332061767578" height="33.333332061767578"/>
-        <image name="logo_google" width="33.333332061767578" height="33.333332061767578"/>
         <image name="music.house.fill" catalog="system" width="128" height="106"/>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

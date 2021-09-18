@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -54,7 +54,6 @@
 				226CEB7A288601E9E7D99B26 /* Pods-SopotifyLoginSampleApp.debug.xcconfig */,
 				CDA187C3E561B81ED3C4118F /* Pods-SopotifyLoginSampleApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};

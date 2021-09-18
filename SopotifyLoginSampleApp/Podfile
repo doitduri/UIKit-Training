@@ -8,4 +8,6 @@ target 'SopotifyLoginSampleApp' do
   # Pods for SopotifyLoginSampleApp
 
  pod 'Firebase/Auth'
+ pod 'GoogleSignIn'
+
 end

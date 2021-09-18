@@ -6,11 +6,13 @@
 //
 
 import UIKit
+import GoogleSignIn
+import Firebase
 
 class LoginViewController: UIViewController {
    
     @IBOutlet weak var emailLoginButton: UIButton!
-    @IBOutlet weak var googleLoginButton: UIButton!
+    @IBOutlet weak var googleLoginButton: GIDSignInButton!
     @IBOutlet weak var appleLoginButton: UIButton!
     
     @IBAction func tapGoogleLoginButton(_ sender: UIButton) {
@@ -24,10 +26,22 @@ class LoginViewController: UIViewController {
         
         // 네비게이션 바 숨기기
         navigationController?.navigationBar.isHidden = true
+        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        guard let clientID = FirebaseApp.app()?.options.clientID else { return }
+        let signInConfig = GIDConfiguration.init(clientID: clientID)
+        
+        GIDSignIn.sharedInstance.signIn(with: signInConfig, presenting: self) { user, error in
+            guard error == nil else { return }
+
+            self.googleLoginButton.style = .standard
+            // If sign in succeeded, display the app's main content View.
+          }
+        
         [emailLoginButton, googleLoginButton, appleLoginButton].forEach {
             $0?.layer.borderWidth = 1
             $0?.layer.borderColor = UIColor.white.cgColor
@@ -35,4 +49,14 @@ class LoginViewController: UIViewController {
         }
     }
     
+    @IBAction func signIn(sender: Any) {
+        guard let clientID = FirebaseApp.app()?.options.clientID else { return }
+        let signInConfig = GIDConfiguration.init(clientID: clientID)
+        
+      GIDSignIn.sharedInstance.signIn(with: signInConfig, presenting: self) { user, error in
+        guard error == nil else { return }
+
+        // If sign in succeeded, display the app's main content View.
+      }
+    }
 }
