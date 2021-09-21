@@ -78,7 +78,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="signInSender:" destination="DSI-OO-5Dd" eventType="touchUpInside" id="1qm-q1-iyB"/>
+                                            <action selector="tapGoogleLoginButtonWithSender:" destination="DSI-OO-5Dd" eventType="touchUpInside" id="QRk-7I-8jL"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ndd-Id-Ab3">
@@ -93,8 +93,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="appleLoginButton:" destination="DSI-OO-5Dd" eventType="touchUpInside" id="jOS-ga-QsY"/>
-                                            <action selector="tapAppleLoginButton:" destination="DSI-OO-5Dd" eventType="touchUpInside" id="IN0-lS-QkE"/>
+                                            <action selector="tapAppleLoginButton:" destination="DSI-OO-5Dd" eventType="touchUpInside" id="GxU-ci-M7x"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -121,9 +120,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="Wvl-Tc-lXo"/>
                     <connections>
-                        <outlet property="appleLoginButton" destination="Ndd-Id-Ab3" id="4Gd-rQ-q1W"/>
+                        <outlet property="appleLoginButton" destination="Ndd-Id-Ab3" id="r7I-Fb-fJX"/>
                         <outlet property="emailLoginButton" destination="Mam-KS-N4y" id="fhp-gK-6v8"/>
-                        <outlet property="googleLoginButton" destination="K4Q-K1-twq" id="efz-Hk-hgM"/>
+                        <outlet property="googleLoginButton" destination="K4Q-K1-twq" id="sWF-CS-dPu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DEy-s8-VAE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
