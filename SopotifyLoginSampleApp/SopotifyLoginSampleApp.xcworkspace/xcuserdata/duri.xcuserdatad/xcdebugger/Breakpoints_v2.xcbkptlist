@@ -14,10 +14,10 @@
             filePath = "SopotifyLoginSampleApp/LoginViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "14"
-            endingLineNumber = "14"
-            landmarkName = "LoginViewController"
-            landmarkType = "3">
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "googleLoginButton"
+            landmarkType = "24">
             <Locations>
                <Location
                   uuid = "A2B0F436-F6D9-4B2C-9F86-D80EE3710406 - 909774750b52f682"
