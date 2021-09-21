@@ -25,7 +25,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="KUp-3G-rTk" kind="show" trigger="accessoryAction" id="x4S-Iy-GCz"/>
+                                    <segue destination="KUp-3G-rTk" kind="show" trigger="accessoryAction" id="zjw-2q-cEE"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -59,7 +59,7 @@
         <!--카드 혜택 상세-->
         <scene sceneID="UBj-fI-C2o">
             <objects>
-                <viewController id="KUp-3G-rTk" customClass="CardDetailViewController" customModule="CreditCardList" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CardDetailViewController" id="KUp-3G-rTk" customClass="CardDetailViewController" customModule="CreditCardList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GGf-ZI-7Dx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -182,9 +182,9 @@
                         <outlet property="benefitConditionLabel" destination="khL-6v-3za" id="knY-xR-dL5"/>
                         <outlet property="benefitDateLabel" destination="S1W-1R-XPf" id="Ris-mZ-6ee"/>
                         <outlet property="benefitDetailLabel" destination="FsL-wG-l3Q" id="cvA-Qa-74u"/>
-                        <outlet property="conditionLabel" destination="ABf-5R-07X" id="paq-Ri-hst"/>
+                        <outlet property="conditionLabel" destination="uzo-VZ-mSs" id="o9U-aF-Wp3"/>
                         <outlet property="lottieView" destination="BUS-A1-20X" id="gKz-kb-o6W"/>
-                        <outlet property="periodLabel" destination="y1D-vN-IIq" id="IwL-dv-FSb"/>
+                        <outlet property="periodLabel" destination="oKS-h6-GU6" id="l0h-Kz-dl4"/>
                         <outlet property="titleLabel" destination="66V-WO-HeS" id="2wf-Pe-SZj"/>
                     </connections>
                 </viewController>
@@ -193,6 +193,9 @@
             <point key="canvasLocation" x="2157" y="-52"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="BUS-A1-20X"/>
+    </designables>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
