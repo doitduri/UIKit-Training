@@ -1,0 +1,428 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C13C855F26F4A9A300E07809 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13C855E26F4A9A300E07809 /* AppDelegate.swift */; };
+		C13C856126F4A9A300E07809 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13C856026F4A9A300E07809 /* SceneDelegate.swift */; };
+		C13C856626F4A9A300E07809 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C13C856426F4A9A300E07809 /* Main.storyboard */; };
+		C13C856826F4A9A600E07809 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C13C856726F4A9A600E07809 /* Assets.xcassets */; };
+		C13C856B26F4A9A600E07809 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C13C856926F4A9A600E07809 /* LaunchScreen.storyboard */; };
+		C13C857326F4A9D100E07809 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13C857226F4A9D100E07809 /* LoginViewController.swift */; };
+		C1F453BF26F4B03800AD80F2 /* EnterEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F453BE26F4B03800AD80F2 /* EnterEmailViewController.swift */; };
+		C1F453C126F4B65A00AD80F2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F453C026F4B65A00AD80F2 /* MainViewController.swift */; };
+		C1F453C326F4C84000AD80F2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C1F453C226F4C84000AD80F2 /* GoogleService-Info.plist */; };
+		C45F70A7B34B9CE903FD6A8F /* Pods_SopotifyLoginSampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185FA9CF44D292A825C11828 /* Pods_SopotifyLoginSampleApp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		185FA9CF44D292A825C11828 /* Pods_SopotifyLoginSampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SopotifyLoginSampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		226CEB7A288601E9E7D99B26 /* Pods-SopotifyLoginSampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SopotifyLoginSampleApp.debug.xcconfig"; path = "Target Support Files/Pods-SopotifyLoginSampleApp/Pods-SopotifyLoginSampleApp.debug.xcconfig"; sourceTree = "<group>"; };
+		C13C855B26F4A9A300E07809 /* SopotifyLoginSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SopotifyLoginSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C13C855E26F4A9A300E07809 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C13C856026F4A9A300E07809 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C13C856526F4A9A300E07809 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C13C856726F4A9A600E07809 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C13C856A26F4A9A600E07809 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C13C856C26F4A9A600E07809 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C13C857226F4A9D100E07809 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C1F453BE26F4B03800AD80F2 /* EnterEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterEmailViewController.swift; sourceTree = "<group>"; };
+		C1F453C026F4B65A00AD80F2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		C1F453C226F4C84000AD80F2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CDA187C3E561B81ED3C4118F /* Pods-SopotifyLoginSampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SopotifyLoginSampleApp.release.xcconfig"; path = "Target Support Files/Pods-SopotifyLoginSampleApp/Pods-SopotifyLoginSampleApp.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C13C855826F4A9A200E07809 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C45F70A7B34B9CE903FD6A8F /* Pods_SopotifyLoginSampleApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11916AEAA3D1062A15A7A664 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				226CEB7A288601E9E7D99B26 /* Pods-SopotifyLoginSampleApp.debug.xcconfig */,
+				CDA187C3E561B81ED3C4118F /* Pods-SopotifyLoginSampleApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C13C855226F4A9A200E07809 = {
+			isa = PBXGroup;
+			children = (
+				C13C855D26F4A9A300E07809 /* SopotifyLoginSampleApp */,
+				C13C855C26F4A9A300E07809 /* Products */,
+				11916AEAA3D1062A15A7A664 /* Pods */,
+				C767F24E3F82784AA1C6CFBD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C13C855C26F4A9A300E07809 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C13C855B26F4A9A300E07809 /* SopotifyLoginSampleApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C13C855D26F4A9A300E07809 /* SopotifyLoginSampleApp */ = {
+			isa = PBXGroup;
+			children = (
+				C1F453C026F4B65A00AD80F2 /* MainViewController.swift */,
+				C13C855E26F4A9A300E07809 /* AppDelegate.swift */,
+				C13C856026F4A9A300E07809 /* SceneDelegate.swift */,
+				C13C856426F4A9A300E07809 /* Main.storyboard */,
+				C13C857226F4A9D100E07809 /* LoginViewController.swift */,
+				C1F453BE26F4B03800AD80F2 /* EnterEmailViewController.swift */,
+				C13C856726F4A9A600E07809 /* Assets.xcassets */,
+				C13C856926F4A9A600E07809 /* LaunchScreen.storyboard */,
+				C13C856C26F4A9A600E07809 /* Info.plist */,
+				C1F453C226F4C84000AD80F2 /* GoogleService-Info.plist */,
+			);
+			path = SopotifyLoginSampleApp;
+			sourceTree = "<group>";
+		};
+		C767F24E3F82784AA1C6CFBD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				185FA9CF44D292A825C11828 /* Pods_SopotifyLoginSampleApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C13C855A26F4A9A200E07809 /* SopotifyLoginSampleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C13C856F26F4A9A600E07809 /* Build configuration list for PBXNativeTarget "SopotifyLoginSampleApp" */;
+			buildPhases = (
+				D4E0575A727600882EE33BD8 /* [CP] Check Pods Manifest.lock */,
+				C13C855726F4A9A200E07809 /* Sources */,
+				C13C855826F4A9A200E07809 /* Frameworks */,
+				C13C855926F4A9A200E07809 /* Resources */,
+				C42C318974C8BD869C890EB3 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SopotifyLoginSampleApp;
+			productName = SopotifyLoginSampleApp;
+			productReference = C13C855B26F4A9A300E07809 /* SopotifyLoginSampleApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C13C855326F4A9A200E07809 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					C13C855A26F4A9A200E07809 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = C13C855626F4A9A200E07809 /* Build configuration list for PBXProject "SopotifyLoginSampleApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C13C855226F4A9A200E07809;
+			productRefGroup = C13C855C26F4A9A300E07809 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C13C855A26F4A9A200E07809 /* SopotifyLoginSampleApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C13C855926F4A9A200E07809 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C13C856B26F4A9A600E07809 /* LaunchScreen.storyboard in Resources */,
+				C1F453C326F4C84000AD80F2 /* GoogleService-Info.plist in Resources */,
+				C13C856826F4A9A600E07809 /* Assets.xcassets in Resources */,
+				C13C856626F4A9A300E07809 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C42C318974C8BD869C890EB3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SopotifyLoginSampleApp/Pods-SopotifyLoginSampleApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SopotifyLoginSampleApp/Pods-SopotifyLoginSampleApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SopotifyLoginSampleApp/Pods-SopotifyLoginSampleApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4E0575A727600882EE33BD8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SopotifyLoginSampleApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C13C855726F4A9A200E07809 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C13C857326F4A9D100E07809 /* LoginViewController.swift in Sources */,
+				C13C855F26F4A9A300E07809 /* AppDelegate.swift in Sources */,
+				C1F453BF26F4B03800AD80F2 /* EnterEmailViewController.swift in Sources */,
+				C13C856126F4A9A300E07809 /* SceneDelegate.swift in Sources */,
+				C1F453C126F4B65A00AD80F2 /* MainViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C13C856426F4A9A300E07809 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C13C856526F4A9A300E07809 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C13C856926F4A9A600E07809 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C13C856A26F4A9A600E07809 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C13C856D26F4A9A600E07809 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C13C856E26F4A9A600E07809 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C13C857026F4A9A600E07809 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 226CEB7A288601E9E7D99B26 /* Pods-SopotifyLoginSampleApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9Y2YJ5DNS7;
+				INFOPLIST_FILE = SopotifyLoginSampleApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = doitduri.SopotifyLoginSampleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C13C857126F4A9A600E07809 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDA187C3E561B81ED3C4118F /* Pods-SopotifyLoginSampleApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9Y2YJ5DNS7;
+				INFOPLIST_FILE = SopotifyLoginSampleApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = doitduri.SopotifyLoginSampleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C13C855626F4A9A200E07809 /* Build configuration list for PBXProject "SopotifyLoginSampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C13C856D26F4A9A600E07809 /* Debug */,
+				C13C856E26F4A9A600E07809 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C13C856F26F4A9A600E07809 /* Build configuration list for PBXNativeTarget "SopotifyLoginSampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C13C857026F4A9A600E07809 /* Debug */,
+				C13C857126F4A9A600E07809 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C13C855326F4A9A200E07809 /* Project object */;
+}
