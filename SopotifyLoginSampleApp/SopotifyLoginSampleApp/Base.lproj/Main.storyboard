@@ -67,10 +67,20 @@
                                             <segue destination="aLM-8f-ZdV" kind="show" id="Fdf-NA-PCl"/>
                                         </connections>
                                     </button>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fWG-PU-8HD" customClass="GIDSignInButton">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K4Q-K1-twq">
                                         <rect key="frame" x="0.0" y="75" width="354" height="60"/>
-                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </view>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="qUu-Qz-9aZ"/>
+                                        </constraints>
+                                        <inset key="titleEdgeInsets" minX="-30" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="-120" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Google로 계속하기" image="logo_google">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="signInSender:" destination="DSI-OO-5Dd" eventType="touchUpInside" id="1qm-q1-iyB"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ndd-Id-Ab3">
                                         <rect key="frame" x="0.0" y="150" width="354" height="60"/>
                                         <constraints>
@@ -89,11 +99,11 @@
                                     </button>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="K4Q-K1-twq" firstAttribute="leading" secondItem="l9b-In-fjL" secondAttribute="leading" id="5h3-kH-rac"/>
                                     <constraint firstAttribute="trailing" secondItem="Ndd-Id-Ab3" secondAttribute="trailing" id="DAC-Xl-yWh"/>
-                                    <constraint firstAttribute="trailing" secondItem="fWG-PU-8HD" secondAttribute="trailing" id="Ddh-v0-fsg"/>
                                     <constraint firstItem="Mam-KS-N4y" firstAttribute="leading" secondItem="l9b-In-fjL" secondAttribute="leading" id="P4j-hy-sxf"/>
                                     <constraint firstAttribute="trailing" secondItem="Mam-KS-N4y" secondAttribute="trailing" id="PWv-5q-oqN"/>
-                                    <constraint firstItem="fWG-PU-8HD" firstAttribute="leading" secondItem="l9b-In-fjL" secondAttribute="leading" id="VbN-jR-3pW"/>
+                                    <constraint firstAttribute="trailing" secondItem="K4Q-K1-twq" secondAttribute="trailing" id="sLr-jZ-TMg"/>
                                     <constraint firstItem="Ndd-Id-Ab3" firstAttribute="leading" secondItem="l9b-In-fjL" secondAttribute="leading" id="uVX-ZH-TYz"/>
                                 </constraints>
                             </stackView>
@@ -113,7 +123,7 @@
                     <connections>
                         <outlet property="appleLoginButton" destination="Ndd-Id-Ab3" id="4Gd-rQ-q1W"/>
                         <outlet property="emailLoginButton" destination="Mam-KS-N4y" id="fhp-gK-6v8"/>
-                        <outlet property="googleLoginButton" destination="fWG-PU-8HD" id="HpE-Qv-CM2"/>
+                        <outlet property="googleLoginButton" destination="K4Q-K1-twq" id="efz-Hk-hgM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DEy-s8-VAE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -225,7 +235,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DBN-av-EG7">
-                                <rect key="frame" x="181" y="485" width="52" height="30"/>
+                                <rect key="frame" x="181" y="535" width="52" height="30"/>
                                 <state key="normal" title="로그아웃">
                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -233,18 +243,28 @@
                                     <action selector="tapLogoutButton:" destination="biL-y0-mvl" eventType="touchUpInside" id="ga9-Fj-HPw"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XpA-Mk-H8x">
+                                <rect key="frame" x="166" y="485" width="82" height="30"/>
+                                <state key="normal" title="비밀번호 변경"/>
+                                <connections>
+                                    <action selector="resetPasswordButtonTapped:" destination="biL-y0-mvl" eventType="touchUpInside" id="sh2-Du-Uvf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ITy-aH-73y"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="DBN-av-EG7" firstAttribute="top" secondItem="XpA-Mk-H8x" secondAttribute="bottom" constant="20" id="1Tw-iz-LTg"/>
+                            <constraint firstItem="XpA-Mk-H8x" firstAttribute="centerX" secondItem="ITy-aH-73y" secondAttribute="centerX" id="7Ij-On-wjG"/>
                             <constraint firstItem="DBN-av-EG7" firstAttribute="centerX" secondItem="AgS-V4-Cb3" secondAttribute="centerX" id="ClW-4h-HPb"/>
-                            <constraint firstItem="DBN-av-EG7" firstAttribute="top" secondItem="Ajz-5T-sIv" secondAttribute="bottom" constant="20" id="aEL-AQ-TkB"/>
+                            <constraint firstItem="XpA-Mk-H8x" firstAttribute="top" secondItem="Ajz-5T-sIv" secondAttribute="bottom" constant="20" id="wrn-bV-6dp"/>
                             <constraint firstItem="DBN-av-EG7" firstAttribute="centerX" secondItem="Ajz-5T-sIv" secondAttribute="centerX" id="zSz-m9-iG6"/>
                             <constraint firstItem="Ajz-5T-sIv" firstAttribute="centerY" secondItem="ITy-aH-73y" secondAttribute="centerY" id="zbm-8v-n5S"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Nrn-NY-fiD"/>
                     <connections>
+                        <outlet property="resetPasswordButton" destination="XpA-Mk-H8x" id="Pxk-oF-3PS"/>
                         <outlet property="welcomeLabel" destination="Ajz-5T-sIv" id="htn-gv-BgX"/>
                     </connections>
                 </viewController>
@@ -255,6 +275,7 @@
     </scenes>
     <resources>
         <image name="logo_apple" width="33.333332061767578" height="33.333332061767578"/>
+        <image name="logo_google" width="33.333332061767578" height="33.333332061767578"/>
         <image name="music.house.fill" catalog="system" width="128" height="106"/>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
