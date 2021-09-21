@@ -17,7 +17,7 @@
 |3|LEDBoard|간단한 전광판 앱|[링크](https://github.com/doitduri/UIKit-Training/tree/main/LEDBoard) |
 |4|Calculator|계산기 앱|[링크](https://github.com/doitduri/UIKit-Training/tree/main/Calculator)|
 |5|Login |Firebase 기반 Login (Spotify UI)|[링크](https://github.com/doitduri/UIKit-Training/pull/4#issue-738356267) |
-|6|신용카드 추천 앱|firebase reatime database ||[링크](https://github.com/doitduri/UIKit-Training/tree/main/CreditCardList)|
+|6|신용카드 추천 앱|firebase reatime database |[링크](https://github.com/doitduri/UIKit-Training/tree/main/CreditCardList)|
 |7|실시간 공지 팝업 |Firebase remote config로 팝업 제어 | |
 |8|물 마시기 앱 |local notification | |
 |9|재난문자 푸시 알림 앱 |APNs, FCM | |
