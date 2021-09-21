@@ -16,7 +16,7 @@
 |2|ScreenTransactionExample|화면 전환 예제 |[링크](https://github.com/doitduri/UIKit-Training/tree/main/ScreenTransactionExample) |
 |3|LEDBoard|간단한 전광판 앱|[링크](https://github.com/doitduri/UIKit-Training/tree/main/LEDBoard) |
 |4|Calculator|계산기 앱|[링크](https://github.com/doitduri/UIKit-Training/tree/main/Calculator)|
-|5|Login |Firebase 기반 Login (Spotify UI)| |
+|5|Login |Firebase 기반 Login (Spotify UI)|[링크](https://github.com/doitduri/UIKit-Training/pull/4#issue-738356267) |
 |6|실시간 공지 팝업 |Firebase remote config로 팝업 제어 | |
 |7|물 마시기 앱 |local notification | |
 |8|재난문자 푸시 알림 앱 |APNs, FCM | |
