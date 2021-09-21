@@ -14,16 +14,10 @@ import CryptoKit // 해시 값 추가
 class LoginViewController: UIViewController {
    
     @IBOutlet weak var emailLoginButton: UIButton!
-    @IBOutlet weak var googleLoginButton: GIDSignInButton!
+    @IBOutlet weak var googleLoginButton: UIButton!
     @IBOutlet weak var appleLoginButton: UIButton!
     
     private var currentNonce: String?
-    
-    @IBAction func tapGoogleLoginButton(_ sender: UIButton) {
-    }
-    
-    @IBAction func tapAppleLoginButton(_ sender: UIButton) {
-    }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -43,7 +37,7 @@ class LoginViewController: UIViewController {
         }
     }
     
-    @IBAction func signIn(sender: Any) {
+    @IBAction func tapGoogleLoginButton(sender: Any) {
         guard let clientID = FirebaseApp.app()?.options.clientID else { return }
         let signInConfig = GIDConfiguration.init(clientID: clientID)
         
@@ -60,8 +54,12 @@ class LoginViewController: UIViewController {
             self.showMainViewController()
         }
       }
-    
     }
+    
+    @IBAction func tapAppleLoginButton(_ sender: UIButton) {
+        startSignInWithAppleFlow()
+    }
+    
     
     private func showMainViewController() {
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
@@ -123,7 +121,7 @@ extension LoginViewController {
         let appleIDProvider = ASAuthorizationAppleIDProvider()
         let request = appleIDProvider.createRequest()
         // request 요청을 했을 때 none가 포함되어서 릴레이 공격을 방지
-        // 추후 파베에서도 무결성 확인을 할 수 있게끔 함 
+        // 추후 파베에서도 무결성 확인을 할 수 있게끔 함
         request.requestedScopes = [.fullName, .email]
         request.nonce = sha256(nonce)
         
@@ -174,5 +172,11 @@ extension LoginViewController {
         }
         
         return result
+    }
+}
+
+extension LoginViewController : ASAuthorizationControllerPresentationContextProviding {
+    func presentationAnchor(for controller: ASAuthorizationController) -> ASPresentationAnchor {
+        return self.view.window!
     }
 }
